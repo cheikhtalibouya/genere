@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generetor en Js</title> 
+   
+    <style>
+        body{
+               position: relative;
+               height: 100vh;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-color:  rgb(79, 79, 219); 
+                
+           box-shadow: 0 0 5px cyan,
+           0 0 25px cyan;
+        }
+        button:hover{
+            box-shadow: 0 0 5px cyan,
+            0 0 25px cyan, 0 0 50px cyan,
+            0 0 100px cyan, 0 0 200px;
+           
+        }
+
+        button{
+           
+           box-shadow: 0 0 5px cyan,
+           0 0 25px cyan;
+        }
+        button:hover{
+            box-shadow: 0 0 5px cyan,
+            0 0 25px cyan, 0 0 50px cyan,
+            0 0 100px cyan, 0 0 200px;
+           
+        }
+        h1, h3{
+            color: aliceblue;
+        }
+        p{
+            padding: 10%; 
+            color: rgba(255, 255, 255, 0.74);
+             
+           box-shadow: 0 0 5px cyan,
+           0 0 25px cyan;
+        }
+        button:hover{
+            box-shadow: 0 0 5px cyan,
+            0 0 25px cyan, 0 0 50px cyan,
+            0 0 100px cyan, 0 0 200px;
+           
+        }
+       
+        fieldset{
+        	width: 50%;
+        	height: 50%;
+            background-color:rgba(158, 158, 240, 0.329);
+              
+           box-shadow: 0 0 5px cyan,
+           0 0 25px cyan;
+        }
+        button:hover{
+            box-shadow: 0 0 5px cyan,
+            0 0 25px cyan, 0 0 50px cyan,
+            0 0 100px cyan, 0 0 200px;
+           
+        
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+
+	<h1><u>Générateur de proverbe de Régis CARLO</u></h1>
+<h3><i>Régis CARLO, est un auteur qui essaie de capturer l'essence de la vie à travers ses mots.</i></h3>
+ <button onclick="proverbe()">Encore Plus</button>
+ 
+    <p id="demo"></p>
+    
+  <script>
+
+    var proverbes = [
+        
+"Ce n'etait pas que la décision était mauvaise; elle n'était pas la bonne ce jour-la, dans cette vie. _Régis CARLO",
+"C'est la douleur de ton amour, de tous tes gestes vers moi, qui me bouscle et ébranle le mur de mes peurs et de mes blessures. _Régis CARLO",
+"Il est doux de découvrir les cadeaux qui vivent en nous. _Régis CARLO",
+"Ces moments de tendresse, ou il fait bon d'étre soi, ou l'amour prend tout son sens. _Régis CARLO",
+"La vie n'est pas qu'une bataille à mener c'est aussi une douceur à apprendre. _Régis CARLO",
+"Pour découvre qui je suis, il m'a fallu laisser ce que je prétends étre. _Régis CARLO",
+"A n'etre toi que demain, . il te faudra encore te mentir aujourd'hui. _Régis CARLO",
+"Je me réveille le matin, vulnérable de la douceur de la nuit, l'espoir que le jour, qui se leve, amène la chaleur dans mon coeur. _Régis CARLO",
+"Je me dépose là ici, je peux, au milieu de la course folle du monde. _Régis CARLO",
+"La sensibilité est la plus grande force face à folie de notre époque. _Régis CARLO",
+"Le silence, ces instants ou nous ne parlons plus et pourtant tout se dit plus sincèrent. _Régis CARLO ",
+"S'aimer et aimer. Point final. _Régis CARLO"
+
+];
+    function proverbe() {
+        var randomIndex = Math.floor(Math.random() * proverbes.length);
+        var randomvoir = proverbes [randomIndex];
+        document.getElementById("demo").innerHTML = "" + randomvoir;
+    }
+  </script> 
+ </fieldset>
+</body>
+</html>
